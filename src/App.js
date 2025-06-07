@@ -7,6 +7,8 @@ function App() {
     <div>
       <h1 className={styles.title}>Welcome back!!!!</h1>
         <Button text={"Continue"}/>
+
+        {/*수정 */}
     </div>
   );
 }
