@@ -2,6 +2,7 @@ import Button from "./Button";
 
 // css를 연결하고 싶을 때 import 기능역할 from "./적용할 .css"
 import styles from "./App.module.css";
+import {useEffect, useState} from "react";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
 
     </div>
   );
+
+
+
 }
 
 export default App;
