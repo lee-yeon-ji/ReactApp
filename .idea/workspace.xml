@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment=" react 이전까지 했던 부분 복습">
-      <change afterPath="$PROJECT_DIR$/src/Effects.js" afterDir="false" />
+    <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react useEffect">
+      <change afterPath="$PROJECT_DIR$/src/Cleanup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +84,7 @@
       <workItem from="1749171425894" duration="595000" />
       <workItem from="1749173723746" duration="670000" />
       <workItem from="1749177535751" duration="7337000" />
-      <workItem from="1749283119258" duration="25522000" />
+      <workItem from="1749283119258" duration="31150000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -143,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749370564753</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="react useEffect">
+      <option name="closed" value="true" />
+      <created>1749479128684</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749479128684</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +161,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="react" />
     <MESSAGE value=" react 이전까지 했던 부분 복습" />
-    <option name="LAST_COMMIT_MESSAGE" value=" react 이전까지 했던 부분 복습" />
+    <MESSAGE value="react useEffect" />
+    <option name="LAST_COMMIT_MESSAGE" value="react useEffect" />
   </component>
 </project>

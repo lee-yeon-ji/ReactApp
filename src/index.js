@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Effects from "./Effects";
+import Cleanup from "./Cleanup";
 import reportWebVitals from "./reportWebVitals";
 import "./styles.css";
 
@@ -11,7 +11,7 @@ import "./styles.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <Effects/>
+    <Cleanup/>
 );
 
 reportWebVitals();
