@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Cleanup from "./Cleanup";
+import ToDo from "./ToDo";
 import reportWebVitals from "./reportWebVitals";
 import "./styles.css";
 
@@ -11,7 +11,7 @@ import "./styles.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <Cleanup/>
+    <ToDo/>
 );
 
 reportWebVitals();
