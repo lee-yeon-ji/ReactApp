@@ -19,6 +19,7 @@ function ToDo() {
 
     return (
         <div>
+            {/*//todos 리스트의 갯수 ()안에 {}넣는 이유는 js문법을 사용하기 때문*/}
             <h1>My To dos({toDos.length})</h1>
             <form onSubmit={onSubmit}>
                 <input
@@ -29,6 +30,12 @@ function ToDo() {
                 />
                 <button>Add To Do</button>
             </form>
+            <hr/>
+            <ul>
+                {toDos.map((item, index) =>(
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
 
         </div>
     )
