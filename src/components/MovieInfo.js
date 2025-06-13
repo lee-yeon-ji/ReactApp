@@ -19,7 +19,7 @@ function MovieInfo({coverImg, title, summary, genres}) {
 }
 
 MovieInfo.prototype = {
-    coverImg: PropTypes.string.isRequired,
+    medium_cover_image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
     genres: PropTypes.arrayOf(PropTypes.string).isRequired,
