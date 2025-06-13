@@ -1,9 +1,9 @@
-import {useState, useEffect} from "react";
+import PropTypes from "prop-types";
 
 function MovieInfo({coverImg, title, summary, genres}) {
     return(
         <div>
-            <img src={coverImg}/>
+            <img src={coverImg} alt={title}/>
             <h2>{title}</h2>
             <p>{summary}</p>
             <ul>
@@ -14,5 +14,10 @@ function MovieInfo({coverImg, title, summary, genres}) {
         </div>
     );
 }
-
+Movie.prototype ={
+    coverImg: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
+    genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+}
 export default MovieInfo;
