@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react Movies parameters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +90,7 @@
       <workItem from="1749173723746" duration="670000" />
       <workItem from="1749177535751" duration="7337000" />
       <workItem from="1749283119258" duration="70056000" />
-      <workItem from="1749773689325" duration="9850000" />
+      <workItem from="1749773689325" duration="13582000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -193,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749824860173</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="react Movies parameters">
+      <option name="closed" value="true" />
+      <created>1749825362788</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749825362788</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

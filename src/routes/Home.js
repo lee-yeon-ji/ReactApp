@@ -30,6 +30,7 @@ function Home(){
                             <MovieInfo
                                 //key는 React에서만 map 안에서 컨포넌트들을 render할 때 사용
                                 key={movie.id}
+                                id={movie.id}
                                 coverImg={movie.medium_cover_image}
                                 title={movie.title}
                                 summary={movie.summary}
