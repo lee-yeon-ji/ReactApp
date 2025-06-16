@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import MovieInfo from "../components/MovieInfo";
-import {Link} from "react-router-dom";
+import styles from "./Home.module.css";
 
 function Home(){
     const [loading, setLoading] = useState(true);
@@ -20,24 +20,24 @@ function Home(){
     }, []);
 
 
-
     return (
-        <div>
-            {loading ? (<h1>Loading...</h1>
+        <div className={styles.container}>
+            {loading ? ( <div className={styles.loader}>
+                    <span>Loading...</span>
+                </div>
             ) : (
-                <div>
+                <div className={styles.movies}>
                     {movies.map((movie) => (
                             <MovieInfo
                                 //key는 React에서만 map 안에서 컨포넌트들을 render할 때 사용
                                 key={movie.id}
                                 id={movie.id}
+                                year={movie.year}
                                 coverImg={movie.medium_cover_image}
                                 title={movie.title}
                                 summary={movie.summary}
                                 genres={movie.genres}/>
                         )
-
-
                     )}
                 </div>
             )}
