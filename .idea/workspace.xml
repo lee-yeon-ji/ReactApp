@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react Movies 복습">
-      <change afterPath="$PROJECT_DIR$/src/components/Movie.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movie_practice/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movie_practice/components/Movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movie_practice/routes/Detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movie_practice/routes/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movie_practice/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Home.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ToDo_practice/ToDoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +33,11 @@
     &quot;accountId&quot;: &quot;9bb5119b-f730-4d25-9e28-508c93aeb3ed&quot;
   }
 }</component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -59,7 +55,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/duswl/react-for-beginners",
+    "last_opened_file_path": "C:/Users/duswl/react-for-beginners/src/ToDo_practice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,9 +68,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\duswl\react-for-beginners\src\ToDo_practice" />
+      <recent name="C:\Users\duswl\react-for-beginners\public" />
+      <recent name="C:\Users\duswl\react-for-beginners\src\to_do_list_practice" />
       <recent name="C:\Users\duswl\react-for-beginners\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\duswl\react-for-beginners\src\ToDo_practice" />
+      <recent name="C:\Users\duswl\react-for-beginners\src" />
       <recent name="C:\Users\duswl\react-for-beginners\src\components" />
     </key>
   </component>
@@ -99,7 +100,8 @@
       <workItem from="1749177535751" duration="7337000" />
       <workItem from="1749283119258" duration="70056000" />
       <workItem from="1749773689325" duration="17144000" />
-      <workItem from="1750033355538" duration="17101000" />
+      <workItem from="1750033355538" duration="26119000" />
+      <workItem from="1750147013836" duration="5159000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -229,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749997478413</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="react Movies 복습">
+      <option name="closed" value="true" />
+      <created>1750083719398</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1750083719398</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
