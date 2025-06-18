@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react Movies 복습">
-      <change afterPath="$PROJECT_DIR$/src/ToDo_practice/ToDoList.js" afterDir="false" />
+    <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react todolist 복습">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDo_practice/ToDoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDo_practice/ToDoList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +101,7 @@
       <workItem from="1749283119258" duration="70056000" />
       <workItem from="1749773689325" duration="17144000" />
       <workItem from="1750033355538" duration="26119000" />
-      <workItem from="1750147013836" duration="5159000" />
+      <workItem from="1750147013836" duration="9025000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -239,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750083719398</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="react todolist 복습">
+      <option name="closed" value="true" />
+      <created>1750171791475</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1750171791475</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +264,7 @@
     <MESSAGE value="react Movies parameters" />
     <MESSAGE value="react Movies useparams()" />
     <MESSAGE value="react Movies 복습" />
-    <option name="LAST_COMMIT_MESSAGE" value="react Movies 복습" />
+    <MESSAGE value="react todolist 복습" />
+    <option name="LAST_COMMIT_MESSAGE" value="react todolist 복습" />
   </component>
 </project>

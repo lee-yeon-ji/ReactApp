@@ -3,6 +3,7 @@ import {useState, useEffect, use} from "react";
 
 function ToDo() {
     const [toDo, setToDo] = useState("");
+    console.log(toDo)
     const [toDos, setToDos] = useState([]);
     const onChange = (event) => setToDo(event.target.value);
     const onSubmit = (event) => {
