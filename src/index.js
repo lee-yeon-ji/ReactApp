@@ -7,13 +7,6 @@ import "./styles.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const h3 = React.createElement(
-    "h3",
-    {
-        onClick: () => console.log("click"),
-    }  ,
-    "Hello im a span"
-);
 root.render(
 
     <ToDoList/>
