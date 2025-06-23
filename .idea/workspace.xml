@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react todolist 복습">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToDo_practice/ToDoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToDo_practice/ToDoList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <workItem from="1749773689325" duration="17144000" />
       <workItem from="1750033355538" duration="26119000" />
       <workItem from="1750147013836" duration="9025000" />
-      <workItem from="1750238073926" duration="22895000" />
+      <workItem from="1750238073926" duration="42313000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -277,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750494125677</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="react todolist 복습">
+      <option name="closed" value="true" />
+      <created>1750600604579</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1750600604579</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
