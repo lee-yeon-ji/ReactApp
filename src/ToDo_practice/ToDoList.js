@@ -5,35 +5,41 @@ import button from "../Button";
 
 
 
-
-
-
-
 function ToDoList(){
     const [text, setText] = useState("");
     const [toText, setToText] = useState([]);
     const onChange = (event) => setText(event.target.value);
     const onSubmit = (event) => {event.preventDefault();
-        if (text === ""){
+        if(text === ""){
             return;
         }
+
         setToText((currentArray) => [text, ...currentArray]);
         setText("");
     };
-    console.log(toText)
+
+    console.log(toText);
+
     return(
+
         <div>
-            <h1>My To Dos ({toText.length})</h1>
-            <form onSubmit={onSubmit}>
-                <input value={text} onChange={onChange} type="text" placeholder ="write your to do..."/>
+            <h1>To Dos({toText.length})</h1>
+            <form onSubmit={onSubmit} >
+
+                <input value={text} onChange={onChange} type="text" placeholder = "write..."/>
                 <button>submit</button>
             </form>
+            <hr/>
+            <ul>
+                {toText.map((item , index) => <li key={index}>{item}</li>)}
+            </ul>
+
         </div>
     )
 
+
+
 }
-
-
 
 
 export default ToDoList;
@@ -45,6 +51,89 @@ export default ToDoList;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+// function ToDoList(){
+//     const [text, setText] = useState("");
+//     const [toText, setToText] = useState([]);
+//     const onChange = (event) => setText(event.target.value);
+//     const onSubmit = (event) => {event.preventDefault();
+//         if (text === ""){
+//             return;
+//         }
+//         setToText((currentArray) => [text, ...currentArray]);
+//         setText("");
+//     };
+//     console.log(toText)
+//     return(
+//         <div>
+//             <h1>My To Dos ({toText.length})</h1>
+//             <form onSubmit={onSubmit}>
+//                 <input value={text} onChange={onChange} type="text" placeholder ="write your to do..."/>
+//                 <button>submit</button>
+//             </form>
+//         </div>
+//     )
+//
+// }
+//
+//
+//
+//
+// export default ToDoList;
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
