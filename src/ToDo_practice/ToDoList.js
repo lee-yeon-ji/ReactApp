@@ -5,48 +5,133 @@ import button from "../Button";
 
 
 
-function ToDoList(){
-    const [text, setText] = useState("");
-    const [toText, setToText] = useState([]);
-    const onChange = (event) => setText(event.target.value);
-    const onSubmit = (event) => {event.preventDefault();
-        if(text === ""){
-            return;
-        }
 
-        setToText((currentArray) => [text, ...currentArray]);
-        setText("");
+function ToDoList(){
+    const [todo, setToDo] = useState("");
+    const [toDoList, setToDoList] = useState([]);
+
+    const onChange = (event) => setToDo(event.target.value);
+    const onSubmit = (event) => {event.preventDefault();
+
+    if(todo === ""){
+        return;
+    }
+    setToDo("");
+    setToDoList((currentArray)=>[todo, ...currentArray]);
     };
 
-    console.log(toText);
 
+    console.log(toDoList)
+    console.log(toDoList.map((item, index) => <li key={index}>{item}</li>))
     return(
-
         <div>
-            <h1>To Dos({toText.length})</h1>
-            <form onSubmit={onSubmit} >
-
-                <input value={text} onChange={onChange} type="text" placeholder = "write..."/>
+            <h1>TO DO LIST({toDoList.length})</h1>
+            <form onSubmit={onSubmit}>
+                <input onChange={onChange} value={todo} type="text" placeholder="write..."/>
                 <button>submit</button>
             </form>
             <hr/>
             <ul>
-                {toText.map((item , index) => <li key={index}>{item}</li>)}
+                {toDoList.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
-
         </div>
     )
-
-
-
 }
-
 
 export default ToDoList;
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// function ToDoList(){
+//     const [text, setText] = useState("");
+//     const [toText, setToText] = useState([]);
+//     const onChange = (event) => setText(event.target.value);
+//     const onSubmit = (event) => {event.preventDefault();
+//         if(text === ""){
+//             return;
+//         }
+//
+//         setToText((currentArray) => [text, ...currentArray]);
+//         setText("");
+//     };
+//
+//     console.log(toText);
+//
+//     return(
+//
+//         <div>
+//             <h1>To Dos({toText.length})</h1>
+//             <form onSubmit={onSubmit} >
+//
+//                 <input value={text} onChange={onChange} type="text" placeholder = "write..."/>
+//                 <button>submit</button>
+//             </form>
+//             <hr/>
+//             <ul>
+//                 {toText.map((item , index) => <li key={index}>{item}</li>)}
+//             </ul>
+//
+//         </div>
+//     )
+//
+//
+//
+// }
+//
+//
+// export default ToDoList;
+//
+//
+//
+//
 
 
 
