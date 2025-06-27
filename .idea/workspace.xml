@@ -100,7 +100,7 @@
       <workItem from="1749773689325" duration="17144000" />
       <workItem from="1750033355538" duration="26119000" />
       <workItem from="1750147013836" duration="9025000" />
-      <workItem from="1750238073926" duration="65498000" />
+      <workItem from="1750238073926" duration="72216000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -310,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750857253090</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="react todolist 복습">
+      <option name="closed" value="true" />
+      <created>1750946503979</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1750946503979</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
