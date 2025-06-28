@@ -7,119 +7,77 @@ import button from "../Button";
 
 
 function ToDoList(){
-
-
-
-
-
-
     const [todo, setToDo] = useState("");
-    const [toDoList, setToDoList] = useState([]);
+    const [list, setList ] = useState([]);
 
     const onChange = (event) => setToDo(event.target.value);
     const onSubmit = (event) => {event.preventDefault();
-
-        if(todo === ""){
-            return;
-        }
-        setToDo("");
-        setToDoList((currentArray)=>[todo, ...currentArray]);
-    };
-
-
-    console.log(toDoList)
-    console.log(toDoList.map((item, index) => <li key={index}>{item}</li>))
-    return(
-        <div>
-            <h1>TO DO LIST({toDoList.length})</h1>
-            <form onSubmit={onSubmit}>
-                <input onChange={onChange} value={todo} type="text" placeholder="write..."/>
-                <button>submit</button>
-            </form>
-            <hr/>
-            <ul>
-                {toDoList.map((item, index) => <li key={index}>{item}</li>)}
-            </ul>
-        </div>
-    )
-}
-
-export default ToDoList;
-
-
-
-
-
-const [todo, setToDo] = useState("");
-    const [toDoList, setToDoList] = useState([]);
-
-    const onChange = (event) => setToDo(event.target.value);
-    const onSubmit = (event) => {event.preventDefault();
-
     if(todo === ""){
         return;
+
     }
+
+    setList((currentArray) =>[todo, ...currentArray]);
     setToDo("");
-    setToDoList((currentArray)=>[todo, ...currentArray]);
     };
 
 
-    console.log(toDoList)
-    console.log(toDoList.map((item, index) => <li key={index}>{item}</li>))
     return(
         <div>
-            <h1>TO DO LIST({toDoList.length})</h1>
+            <h1>TO DO LIST({list.length})</h1>
             <form onSubmit={onSubmit}>
-                <input onChange={onChange} value={todo} type="text" placeholder="write..."/>
+                <input onChange={onChange} value={todo} type="text" placeholder="write...."/>
                 <button>submit</button>
             </form>
             <hr/>
             <ul>
-                {toDoList.map((item, index) => <li key={index}>{item}</li>)}
+                {     setList.map((item , index) => <li key={index}>{item}</li>)}
+
             </ul>
+
         </div>
     )
+
 }
 
-export default ToDoList;
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     const [todo, setToDo] = useState("");
+//     const [toDoList, setToDoList] = useState([]);
+//
+//     const onChange = (event) => setToDo(event.target.value);
+//     const onSubmit = (event) => {event.preventDefault();
+//
+//         if(todo === ""){
+//             return;
+//         }
+//         setToDo("");
+//         setToDoList((currentArray)=>[todo, ...currentArray]);
+//     };
+//
+//
+//     console.log(toDoList)
+//     console.log(toDoList.map((item, index) => <li key={index}>{item}</li>))
+//     return(
+//         <div>
+//             <h1>TO DO LIST({toDoList.length})</h1>
+//             <form onSubmit={onSubmit}>
+//                 <input onChange={onChange} value={todo} type="text" placeholder="write..."/>
+//                 <button>submit</button>
+//             </form>
+//             <hr/>
+//             <ul>
+//                 {toDoList.map((item, index) => <li key={index}>{item}</li>)}
+//             </ul>
+//         </div>
+//     )
+// }
+//
+// export default ToDoList;
+//
+//
 
 
 
