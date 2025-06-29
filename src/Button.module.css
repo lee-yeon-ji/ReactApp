@@ -1,4 +1,13 @@
 .btn{
     color: white;
     background-color: tomato;
+    border-radius: 5px;
+    padding:0 10px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    &:hover{
+        background-color: black;
+    }
 }

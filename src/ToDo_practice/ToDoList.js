@@ -1,45 +1,41 @@
-import {useState, useEffect, use} from "react";
-import button from "../Button";
-
-
-
+import {useState} from "react";
+import Button from "../Button";
 
 
 
 function ToDoList(){
-    const [todo, setToDo] = useState("");
-    const [list, setList ] = useState([]);
+    const [text, setText] = useState("");
+    const [toDos, setToDos] = useState([]);
 
-    const onChange = (event) => setToDo(event.target.value);
-    const onSubmit = (event) => {event.preventDefault();
-    if(todo === ""){
-        return;
-
-    }
-
-    setList((currentArray) =>[todo, ...currentArray]);
-    setToDo("");
+    const onChange = (event) => setText(event.target.value);
+    const onSubmit = (event) => {
+        event.preventDefault();
+        if(text === ""){
+            return;
+        }
+        setText("");
+        setToDos((currentArray) => [text, ...currentArray]);
     };
-
+    console.log( toDos.map((item, index) => <li key={index}>{item}</li>));
 
     return(
         <div>
-            <h1>TO DO LIST({list.length})</h1>
+            <h1>to do list({toDos.length})</h1>
             <form onSubmit={onSubmit}>
-                <input onChange={onChange} value={todo} type="text" placeholder="write...."/>
-                <button>submit</button>
+                <input onChange={onChange} value={text} type="text" placeholder="write your to do..."/>
+                <Button text={"submit"}/>
             </form>
             <hr/>
             <ul>
-                {     setList.map((item , index) => <li key={index}>{item}</li>)}
+                {toDos.map((item, index) => <li key={index}>{item}</li>)}
+
 
             </ul>
-
         </div>
     )
-
 }
 
+export default ToDoList;
 
 
 
