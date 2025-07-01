@@ -7,14 +7,20 @@ function CoinList(){
     useEffect(() => {
         fetch("https://api.coinpaprika.com/v1/tickers")
         .then((response) => response.json())
-            .then((json)=> setCoins(json));
-        setLoading(false);
+            .then((json)=> {
+                setCoins(json);
+                setLoading(false);
+            });
     }, [])
 
     return(
         <div>
             <h1>The coins!</h1>
             {loading ? <strong>Loading...</strong> : null}
+            <ul>
+                {/* coin은 coins array 안에 있는 각각의 coin을 의미함*/}
+                {coins.map((coin)=> <li>{coin.name}({coin.symbol}) : ${coin.quotes.USD.price}</li> )}
+            </ul>
         </div>
 
     );
