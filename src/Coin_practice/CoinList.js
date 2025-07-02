@@ -15,12 +15,12 @@ function CoinList(){
 
     return(
         <div>
-            <h1>The coins!</h1>
-            {loading ? <strong>Loading...</strong> : null}
-            <ul>
+            <h1>The coins! {loading ? "" : `(${coins.length})`}</h1>
+            {loading ? <strong>Loading...</strong> :    <select>
                 {/* coin은 coins array 안에 있는 각각의 coin을 의미함*/}
-                {coins.map((coin)=> <li>{coin.name}({coin.symbol}) : ${coin.quotes.USD.price}</li> )}
-            </ul>
+                {coins.map((coin, id)=> <option>{coin.name}({coin.symbol}) : ${coin.quotes.USD.price}</option> )}
+            </select>}
+
         </div>
 
     );
