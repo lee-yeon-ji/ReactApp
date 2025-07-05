@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {use, useEffect, useState} from "react";
 
 function CoinList() {
 
@@ -29,6 +29,24 @@ function CoinList() {
     )
 
 
+}
+
+
+function MovieI(){
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=123456789&language=en-US&page=1")
+            .then((response) => response.json())
+            .then((json) => {
+                setLoading(false);
+                console.log(json);
+            })
+    })
+    return(
+        <div>
+            {loading ? <h1>Loading...</h1> : null}
+        </div>
+    )
 }
 
 

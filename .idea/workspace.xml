@@ -101,7 +101,7 @@
       <workItem from="1750033355538" duration="26119000" />
       <workItem from="1750147013836" duration="9025000" />
       <workItem from="1750238073926" duration="72216000" />
-      <workItem from="1751117116218" duration="44478000" />
+      <workItem from="1751117116218" duration="48735000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -367,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751536298491</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="react coin data 가져오기 복습">
+      <option name="closed" value="true" />
+      <created>1751625232037</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1751625232037</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
