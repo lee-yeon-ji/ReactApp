@@ -1,110 +1,82 @@
-import {use, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
+
 
 function CoinList() {
 
-    const [todo, setToDo] = useState("");
-    const [toDoList , setToDoList] = useState([]);
-    const onChange = (event) => setToDo(event.target.value);
-    const onSubmit = (event) => {event.preventDefault();
-        if(todo === ""){
-            return;
-        }
-
-        setToDo("");
-        setToDoList((currentArray) => [todo, ...currentArray]);
-    };
-
-    return(
-        <div>
-            <h1>to do list ({toDoList.length})</h1>
-            <form onSubmit={onSubmit}>
-                <input onChange={onChange} value={todo} type="text" placeholder="write your to do..."/>
-                <button>submit</button>
-            </form>
-            <hr/>
-            <ul>
-                {toDoList.map((item, index)=> <li key={index}>{item}</li>)}
-            </ul>
-        </div>
-    )
-
-
-}
-
-
-function MovieI(){
     const [loading, setLoading] = useState(true);
+    const [movies, setMovies] = useState([]);
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=123456789&language=en-US&page=1")
-            .then((response) => response.json())
-            .then((json) => {
-                setLoading(false);
-                console.log(json);
-            })
-    })
-    return(
-        <div>
-            {loading ? <h1>Loading...</h1> : null}
+        fetch(`https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=year`).then((response) => response.json())
+            .then((json) =>
+                setMovies(json.data.movies));
+        setLoading(false);
+    }, []);
+    return (
+
+        <div>{loading ? <h1>Loading...</h1> : null}
+
+
         </div>
     )
+
 }
 
 
-    //
-    //
-    //     const [loading, setLoading] = useState(true);
-    //     const [coins, setCoins] = useState([]);
-    //     const [selCoins, setSelCoins] = useState("0");
-    //     const [result, setResult] = useState("0");
-    //
-    //
-    //     const onChange = (event) => {
-    //         setSelCoins(event.target.value);
-    //     }
-    //
-    //     const onSubmit = (event) => {
-    //         event.preventDefault();
-    //         const priceUSD = event.target[0].value;
-    //         calculate(priceUSD);
-    //     }
-    //
-    //     const calculate = (priceUSD) => {
-    //         setResult(priceUSD * selCoins);
-    //     }
-    //
-    //
-    //     useEffect(() => {
-    //         fetch("https://api.coinpaprika.com/v1/tickers?limit=10")
-    //             .then((response) => response.json())
-    //             .then((json) => {
-    //                 setCoins(json);
-    //                 setLoading(false);
-    //             })
-    //     }, []); // 빈 배열이면 한번만 동작
-    //
-    //     return (
-    //         <div>
-    //             <h1>The Coins! {loading ? "" : `(${coins.length})`}</h1>
-    //             {loading
-    //                 ? <strong>Loading....</strong>
-    //                 : <select onChange={onChange}>
-    //                     {coins.map((coin, index) =>
-    //                         <option
-    //                             key={index}
-    //                             value={coin.quotes.USD.price}
-    //                         >{coin.name} : {coin.quotes.USD.price}
-    //                         </option>
-    //                     )}
-    //                 </select>}
-    //             <form onSubmit={onSubmit}>
-    //                 <input type="number" placeholder="write us dollars" />
-    //                 <button>change coins</button>
-    //             </form>
-    //             <h2>you can change {result} coins!</h2>
-    //         </div>
-    //     );
-    // }
-    //
+//
+//
+//     const [loading, setLoading] = useState(true);
+//     const [coins, setCoins] = useState([]);
+//     const [selCoins, setSelCoins] = useState("0");
+//     const [result, setResult] = useState("0");
+//
+//
+//     const onChange = (event) => {
+//         setSelCoins(event.target.value);
+//     }
+//
+//     const onSubmit = (event) => {
+//         event.preventDefault();
+//         const priceUSD = event.target[0].value;
+//         calculate(priceUSD);
+//     }
+//
+//     const calculate = (priceUSD) => {
+//         setResult(priceUSD * selCoins);
+//     }
+//
+//
+//     useEffect(() => {
+//         fetch("https://api.coinpaprika.com/v1/tickers?limit=10")
+//             .then((response) => response.json())
+//             .then((json) => {
+//                 setCoins(json);
+//                 setLoading(false);
+//             })
+//     }, []); // 빈 배열이면 한번만 동작
+//
+//     return (
+//         <div>
+//             <h1>The Coins! {loading ? "" : `(${coins.length})`}</h1>
+//             {loading
+//                 ? <strong>Loading....</strong>
+//                 : <select onChange={onChange}>
+//                     {coins.map((coin, index) =>
+//                         <option
+//                             key={index}
+//                             value={coin.quotes.USD.price}
+//                         >{coin.name} : {coin.quotes.USD.price}
+//                         </option>
+//                     )}
+//                 </select>}
+//             <form onSubmit={onSubmit}>
+//                 <input type="number" placeholder="write us dollars" />
+//                 <button>change coins</button>
+//             </form>
+//             <h2>you can change {result} coins!</h2>
+//         </div>
+//     );
+// }
+//
 
 
 //     const [loading, setLoading] = useState(true);
@@ -175,7 +147,6 @@ function MovieI(){
 //         </div>
 //     );
 // }
-
 
 
 //
