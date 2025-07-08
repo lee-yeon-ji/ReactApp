@@ -3,22 +3,6 @@ import {useEffect, useState} from "react";
 
 function CoinList() {
 
-    const [loading, setLoading] = useState(true);
-    const [movies, setMovies] = useState([]);
-    const getMovies = async () => {
-        const response = await fetch(`https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=year`);
-        const json = await response.json();
-        setMovies(json.data.movies);
-        setLoading(false);
-
-    };
-
-    useEffect(() => {
-
-        getMovies();
-    }, []);
-
-}
 
 //
 //
@@ -148,64 +132,64 @@ function CoinList() {
 
 
 //
-//     const [loading, setLoading] = useState(true);
-//     const [coins, setCoins] = useState([]);
-//     const [usd, setUsd] = useState(""); //입력한 usd 금액
-//     const [btcAmount, setBtcAmount] = useState(null); //살 수 있는 비트코인 수
-//
-//
-//     useEffect(() => {
-//         fetch("https://api.coinpaprika.com/v1/tickers")
-//         .then((response) => response.json())
-//             .then((json)=> {
-//                 setCoins(json);
-//                 setLoading(false);
-//             });
-//     }, [])
-//
-//     // USD 입력값이 바뀔 때마다 비트코인 구매 가능 수량 계산
-//     useEffect(() => {
-//         if (!loading && usd !== "") {
-//             // BTC 코인 정보 찾기
-//             const btc = coins.find((coin) => coin.symbol === "BTC");
-//             if (btc && btc.quotes && btc.quotes.USD && btc.quotes.USD.price) {
-//                 const price = btc.quotes.USD.price;
-//                 setBtcAmount((parseFloat(usd) / price).toFixed(6));
-//             } else {
-//                 setBtcAmount(null);
-//             }
-//         } else {
-//             setBtcAmount(null);
-//         }
-//     }, [usd, coins, loading]);
-//
-//     return(
-//         <div>
-//             <h1>The coins! {loading ? "" : `(${coins.length})`}</h1>
-//             <div>
-//                 <input
-//                     type="number"
-//                     placeholder="Enter USD amount"
-//                     value={usd}
-//                     onChange={(e) => setUsd(e.target.value)}
-//                 />
-//             </div>
-//             {btcAmount && (
-//                 <div>
-//                     <strong>
-//                         {usd} USD로 살 수 있는 비트코인: {btcAmount} BTC
-//                     </strong>
-//                 </div>
-//             )}
-//
-//             {loading ? <strong>Loading...</strong> :    <select>
-//                 {/* coin은 coins array 안에 있는 각각의 coin을 의미함*/}
-//                 {coins.map((coin, id)=> <option>{coin.name}({coin.symbol}) : ${coin.quotes.USD.price}</option> )}
-//             </select>}
-//
-//         </div>
-//
-//     );
-// }
+    const [loading, setLoading] = useState(true);
+    const [coins, setCoins] = useState([]);
+    const [usd, setUsd] = useState(""); //입력한 usd 금액
+    const [btcAmount, setBtcAmount] = useState(null); //살 수 있는 비트코인 수
+
+
+    useEffect(() => {
+        fetch("https://api.coinpaprika.com/v1/tickers")
+        .then((response) => response.json())
+            .then((json)=> {
+                setCoins(json);
+                setLoading(false);
+            });
+    }, [])
+
+    // USD 입력값이 바뀔 때마다 비트코인 구매 가능 수량 계산
+    useEffect(() => {
+        if (!loading && usd !== "") {
+            // BTC 코인 정보 찾기
+            const btc = coins.find((coin) => coin.symbol === "BTC");
+            if (btc && btc.quotes && btc.quotes.USD && btc.quotes.USD.price) {
+                const price = btc.quotes.USD.price;
+                setBtcAmount((parseFloat(usd) / price).toFixed(6));
+            } else {
+                setBtcAmount(null);
+            }
+        } else {
+            setBtcAmount(null);
+        }
+    }, [usd, coins, loading]);
+
+    return(
+        <div>
+            <h1>The coins! {loading ? "" : `(${coins.length})`}</h1>
+            <div>
+                <input
+                    type="number"
+                    placeholder="Enter USD amount"
+                    value={usd}
+                    onChange={(e) => setUsd(e.target.value)}
+                />
+            </div>
+            {btcAmount && (
+                <div>
+                    <strong>
+                        {usd} USD로 살 수 있는 비트코인: {btcAmount} BTC
+                    </strong>
+                </div>
+            )}
+
+            {loading ? <strong>Loading...</strong> :    <select>
+                {/* coin은 coins array 안에 있는 각각의 coin을 의미함*/}
+                {coins.map((coin, id)=> <option>{coin.name}({coin.symbol}) : ${coin.quotes.USD.price}</option> )}
+            </select>}
+
+        </div>
+
+    );
+}
 
     export default CoinList;
