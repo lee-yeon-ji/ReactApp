@@ -7,7 +7,6 @@
     <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react movie 복습">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Movie/MovieList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie/MovieList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +102,7 @@
       <workItem from="1750147013836" duration="9025000" />
       <workItem from="1750238073926" duration="72216000" />
       <workItem from="1751117116218" duration="64385000" />
+      <workItem from="1752124175870" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />

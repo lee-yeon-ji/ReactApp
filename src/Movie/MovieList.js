@@ -22,7 +22,7 @@ function MovieList(){
 
     return(
         <div>
-            <h1>Movie List.. </h1>
+            <h1>Movie ranking! :)</h1>
 
             {loading ? <h1>Loading...</h1>:movies.map(movie => <div key={movie.id}><h2>{movie.title}</h2></div>)}
 
