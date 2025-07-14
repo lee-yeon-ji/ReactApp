@@ -25,7 +25,12 @@ function App(){
         <div>
             <h1>Movie ranking! :)</h1>
 
-            {loading ? <h1>Loading...</h1>:movies.map(movie => )}
+            {loading ? <h1>Loading...</h1>:movies.map(movie =>  <img src={medium_cover_image} alt={movie.title}/>
+                <button onSubmit={onsubmit}>{movie.title}</button>
+    <p>{summary}</p>
+    <ul>
+        {genres.map((g) => <li key={g}>{g}</li>)}
+    </ul>
 
         </div>
     )
