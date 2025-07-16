@@ -1,4 +1,4 @@
-function Movie({medium_cover_image, title, summary, genres }) {
+function MovieList({medium_cover_image, title, summary, genres }) {
     return <div >
         <img src={medium_cover_image}/>
         <h2>{title}</h2>
@@ -10,4 +10,4 @@ function Movie({medium_cover_image, title, summary, genres }) {
             ))}
         </ul></div>
 }
-export default Movie;
+export default MovieList;

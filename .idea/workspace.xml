@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react movie 복습" />
+    <list default="true" id="2a3fd562-9277-4a9c-b104-80eea423c34a" name="Changes" comment="react movie 복습">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +104,7 @@
       <workItem from="1750238073926" duration="72216000" />
       <workItem from="1751117116218" duration="64385000" />
       <workItem from="1752124175870" duration="12647000" />
-      <workItem from="1752452663930" duration="1288000" />
+      <workItem from="1752452663930" duration="3387000" />
     </task>
     <task id="LOCAL-00001" summary="react">
       <option name="closed" value="true" />
@@ -448,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752504601575</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="react movie 복습">
+      <option name="closed" value="true" />
+      <created>1752589855582</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1752589855582</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
