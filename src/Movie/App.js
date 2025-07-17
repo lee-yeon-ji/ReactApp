@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import MovieList from "./MovieList";
 
 function App(){
     const [loading, setLoading] = useState(true);
@@ -26,7 +27,7 @@ function App(){
             <h1>Movie ranking! :)</h1>
 
             {loading ? <h1>Loading...</h1>:movies.map((movie) => (
-                <MovieList/>
+                <MovieList medium_cover_image={movie.medium_cover_image} title={movie.title} summary={movie.summary} genres={movie.genres}/>
             ))}
 
         </div>
